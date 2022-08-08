@@ -4,10 +4,13 @@ import os
 #this code opens a folder that contains txt files. In these txt files there are lists of locations of other files.
 #these file locations are read and the corresponding files are moved to a specific folder
 
-#txt_files holds an array with every text file in the sequence file location folder
-#in each of these files is the list of all the affected seuence numbers
-txt_files= glob.glob(r'C:\Users\ca62014367\Desktop\(sequence file checking )\Sequence File Locations/*.txt')
-folder = glob.glob(r'C:\Users\ca62014367\Desktop\(sequence file checking )\target folders\*')
+#there are different sequence numbers that correspond to one part number. These sequence number files had to be
+#found and moved to their corresponding part number folder to be tested for Automated Testing System discrepancies
+
+#txt_files holds an array with every text file
+#in each of these files is the list of all the affected sequence numbers
+txt_files= glob.glob(File Locations/*.txt')
+folder = glob.glob(path\target folders\*')
 def readFile():
     i=0
     for line in txt_files:
